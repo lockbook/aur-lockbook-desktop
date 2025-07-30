@@ -5,4 +5,4 @@ Comment=The private, polished note-taking platform.
 Terminal=false
 Exec=/usr/bin/lockbook-desktop
 Name=Lockbook
-Icon=logo.svg
+Icon=logo
