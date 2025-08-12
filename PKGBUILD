@@ -1,7 +1,7 @@
 
 pkgname='lockbook-desktop'
 _pkgname="lockbook-desktop"
-pkgver=0.9.25
+pkgver=0.9.26
 pkgrel=1
 arch=('x86_64' 'i686')
 url="https://github.com/lockbook/lockbook"
@@ -17,7 +17,7 @@ groups=('lockbook')
 options=(!lto)
 
 pkgver() {
-  echo "0.9.25"
+  echo "0.9.26"
 }
 
 build() {
@@ -28,6 +28,6 @@ build() {
 
 package() {
   install -D -m755 "$srcdir/lockbook/target/release/lockbook-linux" "$pkgdir/usr/bin/lockbook-desktop"
-  install -D -m644 "$srcdir/aur-lockbook-desktop/light-1-transparent.png" "$pkgdir/usr/share/pixmaps/light-1-transparent.png"
+  install -D -m644 "$srcdir/aur-lockbook-desktop/logo.svg" "$pkgdir/usr/share/pixmaps/logo.svg"
   install -D -m644 "$srcdir/aur-lockbook-desktop/lockbook-desktop.desktop" "$pkgdir/usr/share/applications/lockbook-desktop.desktop"
 }
